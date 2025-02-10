@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  place-items: start;
+  gap: 25px;
+}
+
+.pokemon-card {
+  width: 240px;
+  height: 332px;
+  border: 10px solid;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.pokemon-card:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgb(70, 70, 70);
+}
+.cards-container:has(.pokemon-card:hover) .pokemon-card:not(:hover) {
+  opacity: 0.5;
+}
+.pokemon-id {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+.pokemon-image {
+  display: flex;
+  margin: 0 auto;
+}
+.pokemon-types {
+  display: flex;
+  justify-content: space-around;
+}
+.pokemon-type {
+  width: 75px;
+  text-align: center;
+}
+.plante {
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #479e00;
+}
+.poison {
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #8844c5;
+}
+.feu {
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #ff7e00;
+}
+.vol {
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #8eb9eb;
+}
+.eau {
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #004eff;
+}
+.pokemon-stats {
+  margin-top: 20px;
+}
+.pokemon-stat {
+  display: flex;
+  justify-content: space-between;
+}
+.famille-bulb {
+  border-color: #479e00;
+  background-color: #dcffbf;
+}
+.famille-sala {
+  border-color: #ff7e00;
+  background-color: #ffdfbf;
+}
+.famille-cara {
+  border-color: #004eff;
+  background-color: #bfd2ff;
+}
